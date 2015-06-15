@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block  title %}
+	{{ block.super }} | Product Details.
+{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="span3">
+			<img src="{% static 'img/logo.png' %}" alt="Tutorial Django Girls" />
+		</div>
+		<div class="span5">
+			<h2>Actinomycin D</h2>
+<h3>Properties</h3>
+<div class="tab-content">
+	<div d="tabl-1" class="tab-pane fade in active">
+		<table class="table ">
+			<tbody>
+				<tr>
+				<th>Assay:</th>
+
+					<td>Streptomyces parvulus</td>
+
+					</tr>
+					<tr>
+						<th>Form:</th>
+
+					<td>Solid/powder and solution</td>
+					</tr>
+					<tr>
+						<th>Solubility:</th>
+
+					<td> 10mg/ml of acetone, soluble in ethanol, 1mg/ml of DMSO</td>
+					</tr>
+					<tr>
+						<th>Storage:</th>
+					<td> 2-8°C away from light.</td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+			<hr>
+			<h4>Application:</h4>
+			<p>Actinomycin D is antineoplastic and antibiotic. It is as a selection agent in cell culture, used in studies of suppressing HIV-replication and programmed cell death of PC12 cells, and as an antibiotic in treatment of various malignant neoplasms, including Wilm′s tumour, childhood rhabdosarcoma, Ewing’s sarcoma and metastatic non-seminomatous testicular cancer and as a radiosensitiser.
+            <h4>Mode of Action:</h4>
+
+			<p>Actinomycin D inhibits the proliferation of cells by forming a stable complex with double-stranded DNA, inhibiting DNA-primed RNA synthesis and causing single-stranded breaks in DNA. Additionally, it has been shown to be an inhibitor of the minus-strand transfer step in reverse transcriptase.</p>
+			<h4>Adverse Effects:</h4>
+
+			</p>Include bone marrow depression and gastrointestinal toxicity. The product is an irritant and extravasation leads to severe tissue damage.</p>
+			
+			<h4>Caution:</h4>
+
+			<p>This product is hygroscopic and light-sensitive. If stored protected from light and moisture at 2-8°C, it remains unchanged, by HPLC testing, for at least 15 months. Unused dilute solutions of Actinomycin D are extremely sensitive to light and tend to adsorb to plastic and glass and should be discarded. However, frozen aliquots of concentrated stock solution are stable for at least a month.</p>
+			
+			<h4>Preparation:</h4>
+
+			<p>Actinomycin D is sold as red, shiny crystals and is soluble in acetonitrilie or acetone at 10 mg/mL and in DMSO at a minimum of 1 mg/mL. Some references also show slight solubility in water of 0.5 mg/mL</p>
+			<hr>
+			<p>Price<span class="price">500000</span></p>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

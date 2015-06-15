@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="span5">
+	<div class="contactus">
+	<div class="modal-header">
+	<h3>Contact Us</h3>
+</div>
+	<h4 class="muted"> Fill in this Form to contanct Us.</h4>
+<form class="form-inline" role="form">
+<div class="control-group"> 
+	<label class="control-label" for="name">Your Name :</label>
+<div class="controls">
+<input type="text" placeholder="Your Name" >
+</div>
+</div>
+<div class="control-group"> 
+	<label class="control-label" for="name">Your Email :</label>
+<div class="controls">
+<input type="email" placeholder="Email" >
+</div>
+</div>
+<div class="control-group"> 
+	<label class="control-label" for="name">Your Phone (optional) : </label>
+<div class="controls">
+<input type="email" placeholder="Phone " >
+</div>
+</div>
+<div class="control-group"> 
+	<label class="control-label" for="name">Company (optional) : </label>
+<div class="controls">
+<input type="email" placeholder="Company " >
+</div>
+</div>
+<div class="control-group"> 
+	<label class="control-label" for="name">Message: </label>
+<textarea class="controls" required=""
+placeholder="Your message..." ></textarea>
+</div>
+
+<button class="btn btn-primary"
+type="submit">Submit</button>
+</form>
+</div>
+</div>
+<div class="span2">
+	<div class="modal-header">
+<h3>Our Office</h3>
+</div>
+<h4 class="muted"> For more Information check on our address</h4>
+<address>
+<strong>KessDyanamic,Inc.</strong><br>
+<abbr title="phone">Phone:</abbr> (+256) 784-471 - 7997<br>
+<a href="mailto:#">Email: mailto@somedomain.com</a>
+</address> 
+
+<address>
+<strong>Hours of Operation</strong><br>
+Mon-Fri:8-5pm<br>
+sat:10-4pm<br>
+Sun:11-4pm
+</address>
+
+<address>
+<strong>Address</strong><br>
+Uganda Industrial Research Institute<br>
+Plot 42A,Mukabya Road<br>
+Nakawa Industrial Area<br>
+P.O.Box 7066,Kampala-Uganda<br>
+</address>
+</div>
+{% endblock%}

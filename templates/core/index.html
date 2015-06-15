@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+        <section >
+                    <h3>About Us</h3>
+                    <p>KessDynamic is a technology and life sciences company conceived and founded in 2013 with a mission to tackle technologically demanding problems both present and future. The company is currently developing solutions and products in the areas of bio/pharmaceuticals and enzyme driven technologies with application in nanotechnology, biological and health research, and renewable energies,
+                    </p>
+                    <p>We love <strong>building solutions and products </strong>. We have <a href="{% url 'products' %}">done it in the past</a>. We are doing it right now, and <a href="{% url 'contactus' %}">we can do it for you</a>.
+        			</p>
+        		
+                    <h3>Why Us</h3>
+                    <p>
+                        Aot KessDynamic, we are focused on providing scientific products and solutions with the highest levels of customer satisfaction. With a variety of offerings to choose from, we’re sure you’ll be happy working with us. Look around our website and if you have any comments or questions, please feel free to contact us. We hope to see you again! Check back later for new updates to our website. There’s much more to come!
+                    </p>
+                    <p>
+            	Interested? <a href="{% url 'contactus' %}#contact_form">Contact us today.</a>
+        		</p>
+
+            </section>
+ <section>
+                <h3>Our Products</h3>
+           
+        	<ul class="thumbnails">
+          <li class="span4">
+            <div class="thumbnail">
+              <img src="{% static 'img/logo.png' %}" alt="Tutorial Django Girls" />
+             <div class="caption">
+              <p>Actinomycin D</p>
+              <p>Price<span class="price">500000</span>
+                <p><a href="{% url 'product_detail' %}" class="btn btn-success">view details &raquo;</a></p>
+             </div> 
+             </div>
+           </li>
+             <li class="span4">
+            <div class="thumbnail">
+              <img src="{% static 'img/logo.png' %}" alt="Tutorial Django Girls" />
+             <div class="caption">
+              <p>Actinomycin D</p>
+              <p>Price<span class="price">500000</span>
+                <p><a href="{% url 'product_detail' %}" class="btn btn-success">view details &raquo;</a></p>
+             </div> 
+             </div>
+           </li>
+       </ul>
+        </section>
+{% endblock %}

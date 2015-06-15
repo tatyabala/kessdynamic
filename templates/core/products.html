@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+        <ul class="thumbnails">
+          <li class="span3">
+            <div class="thumbnail">
+              <img src="{% static 'img/logo.png' %}" alt="Tutorial Django Girls" />
+             <div class="caption">
+              <p>Actinomycin D</p>
+              <p>Price<span class="price">500000</span>
+                <p><a href="{% url 'product_detail' %}" class="btn btn-success">view details &raquo;</a></p>
+             </div> 
+             </div>
+           </li>
+             <li class="span3">
+            <div class="thumbnail">
+              <img src="{% static 'img/logo.png' %}" alt="Tutorial Django Girls" />
+             <div class="caption">
+              <p>Actinomycin D</p>
+              <p>Price<span class="price">500000</span>
+                <p><a href="{% url 'product_detail' %}" class="btn btn-success">view details &raquo;</a></p>
+             </div> 
+             </div>
+           </li>
+             <li class="span3">
+            <div class="thumbnail">
+              <img src="{% static 'img/logo.png' %}" alt="Tutorial Django Girls" />
+             <div class="caption">
+              <p>Actinomycin D</p>
+              <p>Price<span class="price">500000</span>
+                <p><a href="{% url 'product_detail' %}" class="btn btn-success">view details &raquo;</a></p>
+             </div> 
+             </div>
+           </li>
+            <li class="span3">
+            <div class="thumbnail">
+              <img src="{% static 'img/logo.png' %}" alt="Tutorial Django Girls" />
+             <div class="caption">
+              <p>Actinomycin D</p>
+              <p>Price<span class="price">500000</span>
+                <p><a href="{% url 'product_detail' %}" class="btn btn-success">view details &raquo;</a></p>
+             </div> 
+             </div>
+           </li>
+        </ul>
+{% endblock %}

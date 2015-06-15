@@ -1,0 +1,130 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}Home | kessdynamic{% endblock %}</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-responsive.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}">
+<link rel="stylesheet" href="{% static 'css/jumbotron.css' %}">
+<link rel="stylesheet" href="{% static 'css/site.css' %}">
+<script>
+$(document).ready(function(){
+$('.carousel').carousel();
+}); // end document.ready
+</script>
+</head>
+<body id="{% block body-id %}body{% endblock %}">
+{% block top-nav-wrapper %}
+ <div id="logo">
+    <h1><a href="{% url 'index' %}"><span>KessDynamic</spam></a></h1>
+  </div>
+<div class="inner">
+<div class="kess">
+  <div class="container">
+        <nav class="blog-nav">
+        <ul class="nav  masthead-nav ">
+         <li>
+<a href="{% url 'index' %}">Home</a>
+</li>
+<li><a href="#">About Us</a></li>
+
+<li><a href="{% url 'products' %}">Products</a></li>
+<li><a href="#">Services</a></li>
+<li >
+<a href="{% url 'contactus' %}">Contact Us</a>
+</li>
+<li><a href="#">Blog</a></li>
+<li>
+<form action="#" class="search ">
+  <input type="text" class="search-query">
+</form>
+</li>
+</ul>
+<ul class="nav masthead-nav pull-right masthead-account">
+  
+<li >  
+  <a href="/" >Login</a>
+</li>
+
+</ul>
+      </ul>
+        </nav>
+      </div>
+</div>
+</div>
+   
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div id="myCarousel" class="carousel slide" >
+        <!-- carousel items-->
+        <div class="carousel-inner" >
+          <div class="active item">
+            <img src="{% static 'img/global/woman.jpg' %}" alt="Tutorial Django Girls" /></div>
+</div>
+<!--Carousel nav-->
+ <a class="carousel-control left" href="#myCarousel" data-slide="
+prev">&lsaquo;</a>
+<a class="carousel-control right" href="#myCarousel" data-slide="
+next">&rsaquo;</a>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    
+    <div class="span3">
+       <div class="well">
+        <ul class="nav nav-list">
+          <li class="nav-header">Products</li>
+          <li ><a href="">Actinomycin D</a></li>
+          <li><a href="">Actinomycin D</a></li>
+          <li><a href="">Actinomycin D</a></li>
+          <li><a href="">Actinomycin D</a></li>
+          <li><a href="">Actinomycin D</a></li>
+          <li><a href="">Actinomycin D</a></li>
+          <li><a href="">Actinomycin D</a></li>
+        </ul>
+      </div>
+      <div class="well">
+        <ul class="nav nav-list">
+          <li class="nav-header">Blog</li>
+          <li ><a href="">kessdynanics</a></li>
+          <li><a href="">biotechnology</a></li>
+          <li><a href="">company</a></li>
+          <li><a href="">Internet</a></li>
+          <li><a href="">CEO</a></li>
+          <li><a href="">Uganda</a></li>
+          <li><a href="">Gadgets</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="span8">
+{% endblock %}
+{% block content %}{% endblock %}
+</div>
+</div>
+</div>
+
+<footer>
+  <hr>
+<div class="container">
+  
+  <div class="row">
+    <div class="span12">
+<p class="pull-left">Copyright &copy; {% now 'Y' %} KessDynamics,Inc. All Rights are Reserved </p>
+<p class="pull-right"><a href="user-agreement.html">Privacy Policy</a>  |  <a href="user_agreement.html">Terms of Use</a></p>
+</div>
+</div>
+</div>
+</footer>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
